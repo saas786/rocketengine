@@ -1,0 +1,70 @@
+/*–––––––––––––––––––––
+      $TYPOGRAPHY
+––––––––––––––––––––––*/
+
+@import "variables";
+
+html {
+  font: normal 100%/1.5 sans-serif;
+  // short hand: weight, size, line-height, family
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  color: #444444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+}
+
+abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var, xmp {
+  /* Accepted values: [ none | manual | auto ] */
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+p + p {
+  text-indent: 1.5em;
+  margin-top: -1.5em;
+}
+
+a {
+  color: #0066cc;
+}
+
+a:focus,
+a:hover {
+  color: #003399;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+a {
+  color: blue;
+}
+

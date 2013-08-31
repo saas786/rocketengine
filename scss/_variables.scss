@@ -1,0 +1,64 @@
+/*–––––––––––––––––––––
+      $HELPERS
+––––––––––––––––––––––*/
+
+/*–––––––––––––––––––––
+      $VARIABLES
+––––––––––––––––––––––*/
+
+// Neat grid variables to override
+$grid-columns: 12 !default; // Total number of columns in the grid
+$max-width: em(1088) !default; // Max-width of the outer container
+
+// Breakpoints, set when needed, not fixed for devices
+$breakpoint-large: "min-width: 60em";
+$breakpoint-medium: "min-width: 20em";
+$breakpoint-small: "min-width: 5em";
+
+/*–––––––––––––––––––––
+   $RESPONSIVE MIXIN
+––––––––––––––––––––––*/
+
+// To use, include the following code in your declarations:
+//
+// .class {
+//   some-property: some-value;
+//
+//   @include responsive($breakpoint) { some-property: some-new-value; }
+// }
+//
+
+@mixin responsive($breakpoint, $media: all) {
+  @media only #{$media} and ($breakpoint) {
+    @content;
+  }
+}
+
+/*–––––––––––––––––––––
+      $REM MIXIN
+––––––––––––––––––––––*/
+
+// Fiona Chan http://www.stubbornella.org/content/2013/07/01/easy-peasy-rem-conversion-with-sass/
+
+// Call the function
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+// Set up mixin that calls the function
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
+// See use below:
+/*
+
+h1 {
+  @include fontSize(32px);
+}
+
+// Results font-size outputted as pxs and rems!
+*/
+
