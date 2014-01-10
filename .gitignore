@@ -9,3 +9,5 @@ doc/
 .sass-cache/
 bower_components/
 node_modules/
+scss/bourbon/
+scss/neat/
