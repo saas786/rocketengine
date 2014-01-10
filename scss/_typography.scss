@@ -10,30 +10,14 @@ html {
 }
 
 body {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
   text-rendering: optimizeLegibility;
-  word-wrap: break-word;
   color: #444444;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  text-rendering: optimizeLegibility;
   line-height: 1;
   margin-top: 0;
-}
-
-abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var, xmp {
-  /* Accepted values: [ none | manual | auto ] */
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  -o-hyphens: none;
-  hyphens: none;
 }
 
 p {
@@ -47,6 +31,7 @@ p + p {
 
 a {
   color: #0066cc;
+  text-decoration: none;
 }
 
 a:focus,
@@ -62,9 +47,5 @@ a:hover {
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
-}
-
-a {
-  color: blue;
 }
 

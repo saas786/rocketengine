@@ -1,0 +1,34 @@
+/*–––––––––––––––––––––
+      $HELPERS
+––––––––––––––––––––––*/
+
+
+
+/*–––––––––––––––––––––
+      $REM MIXIN
+––––––––––––––––––––––*/
+
+// Fiona Chan http://www.stubbornella.org/content/2013/07/01/easy-peasy-rem-conversion-with-sass/
+
+// Call the function
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+// Set up mixin that calls the function
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
+// See use below:
+/*
+
+h1 {
+  @include fontSize(32px);
+}
+
+// Results font-size outputted as pxs and rems!
+*/
+
