@@ -29,10 +29,6 @@ p {
   margin-bottom: 1.5em;
 }
 
-.p-helper {
-  margin-bottom: 0.25em;
-}
-
 // uncomment for paragraph indentation
 
 // p + p {
@@ -48,6 +44,12 @@ a {
 a:focus,
 a:hover {
   color: #003399;
+}
+
+ul, ol {
+  margin: 0;
+  margin-bottom: 1.5em;
+  padding: 0;
 }
 
 // modular scale helper classes
