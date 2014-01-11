@@ -4,6 +4,7 @@
 
 @import "helpers";
 
+
 html {
   font: normal 100%/1.5 sans-serif;
   // short hand: weight, size, line-height, family
@@ -39,6 +40,61 @@ a:hover {
   color: #003399;
 }
 
+// modular scale helper classes
+
+.peta-type {
+  font-size: $petaType;
+}
+
+.tera-type {
+  font-size: $teraType;
+}
+
+.giga-type {
+  font-size: $gigaType;
+}
+
+.mega-type {
+  font-size: $megaType;
+}
+
+.huge-type {
+  font-size: $hugeType;
+}
+
+.large-type {
+  font-size: $largeType;
+}
+
+.medium-type {
+  font-size: $mediumType;
+}
+
+.normal-type {
+  font-size: $normalType;
+}
+
+.small-type {
+  font-size: $smallType;
+}
+
+.small-type {
+  font-size: $littleType;
+}
+
+.tiny-type {
+  font-size: $tinyType;
+}
+
+.nano-type {
+  font-size: $nanoType;
+}
+
+
+
+
+
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -48,4 +104,3 @@ a:hover {
     background: #b3d4fc;
     text-shadow: none;
 }
-
