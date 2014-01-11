@@ -2,33 +2,19 @@
       $HELPERS
 ––––––––––––––––––––––*/
 
+// modular scale
 
+// TODO – come up with better names for variables
 
-/*–––––––––––––––––––––
-      $REM MIXIN
-––––––––––––––––––––––*/
-
-// Fiona Chan http://www.stubbornella.org/content/2013/07/01/easy-peasy-rem-conversion-with-sass/
-
-// Call the function
-@function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return #{$remSize}rem;
-}
-
-// Set up mixin that calls the function
-@mixin fontSize($size) {
-  font-size: $size; //Fallback in px
-  font-size: calculateRem($size);
-}
-
-// See use below:
-/*
-
-h1 {
-  @include fontSize(32px);
-}
-
-// Results font-size outputted as pxs and rems!
-*/
-
+$petaType: 7.478em;
+$teraType: 5.61em;
+$gigaType: 4.209em;
+$megaType: 3.157em;
+$hugeType: 2.369em;
+$largeType: 1.777em;
+$mediumType: 1.333em;
+$normalType: 1em;  // base font-size
+$smallType: 0.75em;
+$littleType: 0.563em;
+$tinyType: 0.422em;
+$nanoType: 0.317em;
