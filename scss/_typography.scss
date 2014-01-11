@@ -2,12 +2,15 @@
       $TYPOGRAPHY
 ––––––––––––––––––––––*/
 
+@import "app-settings";
 @import "helpers";
 
 
 html {
-  font: normal 100%/1.5 sans-serif;
-  // short hand: weight, size, line-height, family
+  font-size: $baseFontSize;
+  font-family: sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
 body {
