@@ -25,13 +25,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  margin: 0 0 1.5em;
+  margin: 0;
+  margin-bottom: 1.5em;
 }
 
-p + p {
-  text-indent: 1.5em;
-  margin-top: -1.5em;
+.p-helper {
+  margin-bottom: 0.25em;
 }
+
+// uncomment for paragraph indentation
+
+// p + p {
+//   text-indent: 1.5em;
+//   margin-top: -1.5em;
+// }
 
 a {
   color: #0066cc;
@@ -81,7 +88,7 @@ a:hover {
   font-size: $smallType;
 }
 
-.small-type {
+.little-type {
   font-size: $littleType;
 }
 
