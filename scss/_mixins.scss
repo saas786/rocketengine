@@ -1,0 +1,104 @@
+// http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+
+@import "variables";
+
+/*======================
+========================
+
+        MIXINS
+
+========================
+=======================*/
+
+
+/*======================
+        $REMS
+=======================*/
+
+// I like to do it 'backwards' (thinking in relative units), specify a target
+// Rem unit, then mixin generates a pixel fallback for IE8-.
+
+@function remPixelFallback( $remSize ) {
+  $pixelSize: $remSize * 16;
+  @return $pixelSize * 1px;
+}
+
+@mixin font-size( $remSize ) {
+  font-size: remPixelFallback( $remSize );
+  font-size: $remSize;
+}
+
+// Usage:
+
+// p { @include font-size(2rem); }
+
+// Output:
+
+// p { font-size: 32px; font-size: 2rem; }
+
+
+/*======================
+      $BREAKPOINTS
+=======================*/
+
+@mixin small-breakpoint {
+  @media screen and ( min-width: $small-breakpoint; ) {
+    @content;
+  }
+}
+
+@mixin medium-breakpoint {
+  @media screen and ( min-width: $medium-breakpoint; ) {
+    @content;
+  }
+}
+
+@mixin large-breakpoint {
+  @media screen and ( min-width: $large-breakpoint; ) {
+    @content;
+  }
+}
+
+// Usage:
+
+// .main { @include small-breakpoint { float: none } }
+
+
+/*======================
+      $CLEARFIX
+=======================*/
+
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Usage:
+
+// .container { @extend %clearfix; }
+
+
+/*======================
+        $HIDDEN
+=======================*/
+
+// hide an element visually, but not from screen readers
+
+%hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+// .visually-hidden { @extend %visually-hidden; }
