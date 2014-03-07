@@ -1,7 +1,7 @@
 # RocketEngine
 
 
-An ongoing personal project to create a simple, light-weight but powerful css framework for getting web projects off the ground quickly.
+An ongoing personal project to create a simple, light-weight but powerful css framework for getting web projects off the ground quickly. Also creating this for my own learning benefit, to keep up on the latest on frontend development, html, and css.
 
 
 ### TODO:
