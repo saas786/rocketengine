@@ -36,3 +36,6 @@ An ongoing personal project to create a simple, light-weight but powerful css fr
 * http://uxdesign.smashingmagazine.com/2014/01/27/pragmatic-ux-techniques-for-smarter-websites/
 * http://learn.shayhowe.com/advanced-html-css/detailed-css-positioning
 * http://helabs.com.br/blog/2014/01/21/prevent-common-problems-when-writing-css-from-scratch/?utm_source=html5weekly&utm_medium=email
+* http://hugogiraudel.com/2014/03/03/another-sass-button-library/?utm_source=CSS-Weekly&utm_campaign=Issue-101&utm_medium=email
+* http://www.sitepoint.com/architecture-sass-project/?utm_source=CSS-Weekly&utm_campaign=Issue-101&utm_medium=email
+* http://www.scottohara.me/article/sass-selector-variables.html?utm_source=CSS-Weekly&utm_campaign=Issue-101&utm_medium=email
