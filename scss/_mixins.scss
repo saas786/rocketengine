@@ -16,27 +16,53 @@
         $REMS
 =======================*/
 
-// I like to do it 'backwards' (thinking in relative units), specify a target
-// Rem unit, then mixin generates a pixel fallback for IE8-.
+// http://codepen.io/HugoGiraudel/pen/xsKdH
 
-@function remPixelFallback( $remSize ) {
-  $pixelSize: $remSize * 16;
-  @return $pixelSize * 1px;
+@function parseInt($n) {
+  @return $n / ( $n * 0 + 1 );
 }
 
-@mixin font-size( $remSize ) {
-  font-size: remPixelFallback( $remSize );
-  font-size: $remSize;
+@mixin rem( $property, $values ) {
+
+  $px: ();
+  $rem: ();
+
+  @each $value in $values {
+
+    @if $value == 0 or $value == auto {
+      $px: append( $px, $value );
+      $rem: append( $rem, $value );
+    }
+
+    @else {
+      $unit: unit( $value ); // get the unit passed in, px, etc
+      $val: parseInt( $value );
+
+      @if $unit == "px" {
+        $px: append( $px, $value );
+        $rem: append( $rem, ( $val / 16 * 1rem ));
+      }
+
+      @if $unit == "rem" {
+        $px: append( $px, ( $val * 16 * 1px ));
+        $rem: append( $rem, $value );
+      }
+    }
+  }
+
+  #{$property}: $px;
+  #{$property}: $rem;
 }
 
 // Usage:
 
-// p { @include font-size(2rem); }
+/*
 
-// Output:
+body {
+  @include rem(font-size, 1.2rem);
+}
 
-// p { font-size: 32px; font-size: 2rem; }
-
+*/
 
 /*======================
       $BREAKPOINTS
