@@ -4,13 +4,6 @@
 An ongoing personal project to create a simple, light-weight but powerful css framework for getting web projects off the ground quickly. Also creating this for my own learning benefit, to keep up on the latest on frontend development, html, and css.
 
 
-### TODO:
-
-1. Create grid mixins
-2. Components
-3. Create sample implementation
-
-
 ### Resources:
 
 * https://github.com/sturobson/Sassifaction
