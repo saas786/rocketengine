@@ -1,7 +1,28 @@
 # RocketEngine
 
 
-An ongoing personal project to create a simple, light-weight but powerful css framework for getting web projects off the ground quickly. Also creating this for my own learning benefit, to keep up on the latest on frontend development, html, and css.
+An ongoing personal project to create a simple, light-weight but powerful css framework for getting web projects off the ground quickly. Also creating this for my own learning benefit, to keep up on the latest on front end development, html, and css.
+
+
+### Naming Conventions for Components
+
+I'll be using a simple implementation of the BEM system, as outlined by [Nicholas Gallagher and Hugo Giraudel](http://www.sitepoint.com/css-sass-styleguide/?utm_source=CSS-Weekly&utm_campaign=Issue-102&utm_medium=email).
+
+    component
+    component--modifier
+    component__element
+    component__element--modifier
+
+    /* Examples */
+
+    service-item
+    service-item--active
+    service-item--main
+    service-item__title
+    service-item__icon
+    service-item__description
+    service-item__button
+    service-item__button--disabled
 
 
 ### Resources:
@@ -32,3 +53,4 @@ An ongoing personal project to create a simple, light-weight but powerful css fr
 * http://hugogiraudel.com/2014/03/03/another-sass-button-library/?utm_source=CSS-Weekly&utm_campaign=Issue-101&utm_medium=email
 * http://www.sitepoint.com/architecture-sass-project/?utm_source=CSS-Weekly&utm_campaign=Issue-101&utm_medium=email
 * http://www.scottohara.me/article/sass-selector-variables.html?utm_source=CSS-Weekly&utm_campaign=Issue-101&utm_medium=email
+* http://www.sitepoint.com/css-sass-styleguide/?utm_source=CSS-Weekly&utm_campaign=Issue-102&utm_medium=email
