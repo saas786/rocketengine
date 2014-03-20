@@ -1,0 +1,125 @@
+/*======================
+========================
+
+      TYPOGRAPHY
+
+========================
+=======================*/
+
+@import "variables";
+@import "mixins";
+
+
+html {
+  font-size: $base-type-size;
+  line-height: $base-line-height;
+  font-family: $primary-font-fam;
+  font-weight: $normal-type;
+}
+
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility;
+  color: $base-type-color;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1;
+  margin-top: 0;
+  font-weight: $bold;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 1.5em;
+}
+
+// uncomment for paragraph indentation
+
+// p + p {
+//   text-indent: 1.5em;
+//   margin-top: -1.5em;
+// }
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: darken($primary-color, 10);
+}
+
+ul, ol {
+  margin: 0;
+  margin-bottom: 1.5em;
+  padding: 0;
+}
+
+// modular scale helper classes
+
+.peta-type {
+  font-size: $peta-type;
+}
+
+.tera-type {
+  font-size: $tera-type;
+}
+
+.giga-type {
+  font-size: $giga-type;
+}
+
+.mega-type, h1 {
+  font-size: $mega-type;
+}
+
+.huge-type, h2 {
+  font-size: $huge-type;
+}
+
+.large-type, h3 {
+  font-size: $large-type;
+}
+
+.medium-type, h4 {
+  font-size: $medium-type;
+}
+
+.normal-type, p, span {
+  font-size: $normal-type;
+}
+
+.small-type {
+  font-size: $small-type;
+}
+
+.little-type {
+  font-size: $little-type;
+}
+
+.tiny-type {
+  font-size: $tiny-type;
+}
+
+.nano-type {
+  font-size: $nano-type;
+}
+
+
+.logo {
+  text-transform: uppercase;
+  font-size: $medium-type;
+}
+
+
+::-moz-selection {
+    background: $primary-color;
+    text-shadow: none;
+}
+
+::selection {
+    background: $primary-color;
+    text-shadow: none;
+}
