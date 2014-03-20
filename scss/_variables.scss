@@ -8,13 +8,13 @@
 
 
 /*======================
-        $BRANDING
+      $BRANDING
 =======================*/
 
 // use descriptive names for colors, like: bright-green or dark blue
 
-$color:                       #5294e8;
-
+$primary-color:               #5294e8;
+$base-type-color:             #444;
 
 /*======================
       $TYPESIZES
@@ -22,23 +22,26 @@ $color:                       #5294e8;
 
 $base-type-size:              100%;
 $base-line-height:            1.5;
+$primary-font-fam:            sans-serif;
+$bold:                        700;
+$normal-type:                 400;
 
 // modular scale – 3:4 perfect fourth, ideal size: 18px
 
 // TODO – come up with better names for variables
 
-$petaType:                    7.478em;
-$teraType:                    5.61em;
-$gigaType:                    4.209em;
-$megaType:                    3.157em;
-$hugeType:                    2.369em;
-$largeType:                   1.777em;
-$mediumType:                  1.333em;
-$normalType:                  1em;      // base font-size
-$smallType:                   0.75em;
-$littleType:                  0.563em;
-$tinyType:                    0.422em;
-$nanoType:                    0.317em;
+$peta-type:                    7.478em;
+$tera-type:                    5.61em;
+$giga-type:                    4.209em;
+$mega-type:                    3.157em;
+$huge-type:                    2.369em;
+$large-type:                   1.777em;
+$medium-type:                  1.333em;
+$normal-type:                  1em;      // base font-size
+$small-type:                   0.75em;
+$little-type:                  0.563em;
+$tiny-type:                    0.422em;
+$nano-type:                    0.317em;
 
 
 /*======================

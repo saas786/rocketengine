@@ -1,28 +1,32 @@
-/*–––––––––––––––––––––
-      $TYPOGRAPHY
-––––––––––––––––––––––*/
+/*======================
+========================
 
+      TYPOGRAPHY
 
+========================
+=======================*/
+
+@import "variables";
+@import "mixins";
 
 
 html {
-  font-size: $baseFontSize;
-  font-family: 'Gotham A', 'Gotham B';
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
+  font-size: $base-type-size;
+  line-height: $base-line-height;
+  font-family: $primary-font-fam;
+  font-weight: $normal-type;
 }
 
 body {
   -webkit-font-smoothing: subpixel-antialiased;
   text-rendering: optimizeLegibility;
-  color: #444444;
+  color: $base-type-color;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
   line-height: 1;
   margin-top: 0;
-  font-weight: 700;
+  font-weight: $bold;
 }
 
 p {
@@ -38,13 +42,13 @@ p {
 // }
 
 a {
-  color: #0066cc;
+  color: $primary-color;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #003399;
+  color: darken($primary-color, 10);
 }
 
 ul, ol {
@@ -56,67 +60,66 @@ ul, ol {
 // modular scale helper classes
 
 .peta-type {
-  font-size: $petaType;
+  font-size: $peta-type;
 }
 
 .tera-type {
-  font-size: $teraType;
+  font-size: $tera-type;
 }
 
 .giga-type {
-  font-size: $gigaType;
+  font-size: $giga-type;
 }
 
-.mega-type {
-  font-size: $megaType;
+.mega-type, h1 {
+  font-size: $mega-type;
 }
 
-.huge-type {
-  font-size: $hugeType;
+.huge-type, h2 {
+  font-size: $huge-type;
 }
 
-.large-type {
-  font-size: $largeType;
+.large-type, h3 {
+  font-size: $large-type;
 }
 
-.medium-type {
-  font-size: $mediumType;
+.medium-type, h4 {
+  font-size: $medium-type;
 }
 
-.normal-type {
-  font-size: $normalType;
+.normal-type, p, span {
+  font-size: $normal-type;
 }
 
 .small-type {
-  font-size: $smallType;
+  font-size: $small-type;
 }
 
 .little-type {
-  font-size: $littleType;
+  font-size: $little-type;
 }
 
 .tiny-type {
-  font-size: $tinyType;
+  font-size: $tiny-type;
 }
 
 .nano-type {
-  font-size: $nanoType;
+  font-size: $nano-type;
 }
 
 
 .logo {
   text-transform: uppercase;
-  ffont-size: $mediumType;
+  font-size: $medium-type;
 }
 
 
-
 ::-moz-selection {
-    background: #b3d4fc;
+    background: $primary-color;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: $primary-color;
     text-shadow: none;
 }
